@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>net.javaguides.springboot</groupId>
 	<artifactId>springboot-helloworld-tutorial</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1-SNAPHSHOT</version>
 	<name>springboot-helloworld-tutorial</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
@@ -66,7 +66,20 @@
             <scope>runtime</scope>
         </dependency>     
 	</dependencies>
+       <distributionManagement>
+                 <repository> 
+			<id>nexus</id>
+			<name>Flipkart Releases Nexus Reposiory</name>
+			<url>http://44.211.226.135:2022/roshan/repository/flipkart-releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>nexus</id>
+			<name>Flipkart Snapshots Nexus Repository</name>
+			<url>http://44.211.226.135:2022/roshan/repository/flipkart-snapshots/</url>
+		</snapshotRepository>
 
+
+	       </distributionManagement>
 	<build>
 		<plugins>
 			<plugin>
