@@ -70,12 +70,12 @@
                  <repository> 
 			<id>nexus</id>
 			<name>Flipkart Releases Nexus Reposiory</name>
-			<url>http://44.211.226.135:2022/roshan/repository/flipkart-releases/</url>
+			<url>http://18.212.39.59:2022/roshan/repository/flipkart-releases/</url>
 		</repository>
 		<snapshotRepository>
 			<id>nexus</id>
 			<name>Flipkart Snapshots Nexus Repository</name>
-			<url>http://44.211.226.135:2022/roshan/repository/flipkart-snapshots/</url>
+			<url>http://18.212.39.59:2022/roshan/repository/flipkart-snapshots/</url>
 		</snapshotRepository>
 
 
