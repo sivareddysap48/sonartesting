@@ -8,6 +8,7 @@
 		<version>2.7.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+	<packaging>war</packaging> 
 	<groupId>net.javaguides.springboot</groupId>
 	<artifactId>springboot-helloworld-tutorial</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
@@ -25,7 +26,11 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-		
+		 <dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-tomcat</artifactId>
+  <scope>provided</scope>
+ </dependency>
 		   <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -69,10 +74,37 @@
 
 	<build>
 		<plugins>
-			<plugin>
+			<!-- <plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
+			</plugin>  -->
+			  <plugin>
+
+            <groupId>org.apache.maven.plugins</groupId>
+
+            <artifactId>maven-war-plugin</artifactId>
+
+            <version>3.1.0</version>
+
+            <executions>
+
+                <execution>
+
+                    <id>default-war</id>
+
+                    <phase>prepare-package</phase>
+
+                    <configuration>
+
+                        <failOnMissingWebXml>false</failOnMissingWebXml>
+
+                    </configuration>
+
+                </execution>
+
+            </executions>
+
+        </plugin>
 		</plugins>
 	</build>
 
