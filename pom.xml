@@ -75,7 +75,7 @@
 		<snapshotRepository>
 			<id>nexus</id>
 			<name>Flipkart Snapshots Nexus Repository</name>
-			<url>http://34.228.194.192:8081/repository/flipkart-release/</url>
+			<url>http://34.228.194.192:8081/repository/flipkart-snapshots/</url>
 		</snapshotRepository>
 
 
