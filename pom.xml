@@ -80,7 +80,7 @@
 		</repository>
 		<snapshotRepository>
 			<id>nexus</id>
-			<name>Flipkart Snapshots Nexus Repository</name>
+			<name>sivareddy Flipkart Snapshots Nexus Repository</name>
 			<url>http://54.209.201.83:8081/repository/flipkart-snapshots/</url>
 		</snapshotRepository>
 
