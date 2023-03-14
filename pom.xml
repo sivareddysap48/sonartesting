@@ -73,11 +73,11 @@
 	</dependencies>
 	
 	   <distributionManagement>
-                 <repository> 
+              <!--   <repository> 
 			<id>nexus</id>
 			<name>Flipkart Releases Nexus Reposiory</name>
 			<url>http://107.22.38.38:8081/repository/flipkart-release/</url>
-		</repository>
+		</repository>-->
 		<snapshotRepository>
 			<id>nexus</id>
 			<name>Flipkart Snapshots Nexus Repository</name>
