@@ -75,15 +75,14 @@
 	   <distributionManagement>
                  <repository> 
 			<id>nexus</id>
-			<name>sivareddy Flipkart Releases Nexus Reposiory</name>
+			<name>Flipkart Releases Nexus Reposiory</name>
 			<url>http://107.22.38.38:8081/repository/flipkart-release/</url>
 		</repository>
 		<snapshotRepository>
 			<id>nexus</id>
-			<name>sivareddy Flipkart Snapshots Nexus Repository</name>
+			<name>Flipkart Snapshots Nexus Repository</name>
 			<url>http://107.22.38.38:8081/repository/flipkart-snapshots/</url>
 		</snapshotRepository>
-
 
 	       </distributionManagement>
 
