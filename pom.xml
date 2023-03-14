@@ -16,7 +16,7 @@
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>8</java.version>
-		<sonar.host.url>http://34.229.149.49:9000/</sonar.host.url>
+		<sonar.host.url>http://54.221.25.136:9000/</sonar.host.url>
 		<sonar.login>admin</sonar.login>
 		<sonar.password>mouni</sonar.password>
 	</properties>
@@ -76,12 +76,12 @@
                  <repository> 
 			<id>nexus</id>
 			<name>sivareddy Flipkart Releases Nexus Reposiory</name>
-			<url>http://3.92.147.20:8081/repository/flipkart-release/</url>
+			<url>http://107.22.38.38:8081/repository/flipkart-release/</url>
 		</repository>
 		<snapshotRepository>
 			<id>nexus</id>
 			<name>sivareddy Flipkart Snapshots Nexus Repository</name>
-			<url>http://3.92.147.20:8081/repository/flipkart-snapshots/</url>
+			<url>http://107.22.38.38:8081/repository/flipkart-snapshots/</url>
 		</snapshotRepository>
 
 
