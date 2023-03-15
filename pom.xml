@@ -16,7 +16,7 @@
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>8</java.version>
-		<sonar.host.url>http://54.221.25.136:9000/</sonar.host.url>
+		<sonar.host.url>http://54.242.137.252:9000/</sonar.host.url>
 		<sonar.login>admin</sonar.login>
 		<sonar.password>mouni</sonar.password>
 	</properties>
@@ -72,19 +72,19 @@
         </dependency>     
 	</dependencies>
 	
-	   <distributionManagement>
-              <!--   <repository> 
+	<!--   <distributionManagement>
+                 <repository> 
 			<id>nexus</id>
 			<name>Flipkart Releases Nexus Reposiory</name>
 			<url>http://107.22.38.38:8081/repository/flipkart-release/</url>
-		</repository>-->
+		</repository>
 		<snapshotRepository>
 			<id>nexus</id>
 			<name>Flipkart Snapshots Nexus Repository</name>
 			<url>http://107.22.38.38:8081/repository/flipkart-snapshots/</url>
 		</snapshotRepository>
 
-	       </distributionManagement>
+	       </distributionManagement> -->
 
 	<build>
 		<finalName>application</finalName>
