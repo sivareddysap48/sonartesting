@@ -1,0 +1,41 @@
+node
+{
+    def mavenHome = tool name : "maven3.6.3" 
+ stage('Checkout')    
+ {
+ git branch: 'war', credentialsId: '4543d819-6929-45a8-bcb3-98bb151539c9', url: 'https://github.com/sivareddysap48/sonartesting.git' 
+ }
+ stage('Build')
+ {
+     sh "${mavenHome}/bin/mvn clean package"
+
+ }
+ stage('ExecuteSonarQubeReport')
+ {
+      sh "${mavenHome}/bin/mvn sonar:sonar"
+ }
+ 
+ stage('UploadArtifactsIntoNexus')
+ {
+      sh "${mavenHome}/bin/mvn deploy"
+ }
+ 
+stage('DeployAppIntoTomcatServer')
+ {
+     
+    sshagent(['74917cab-9051-46a5-9179-6663a9756bcf']) {
+        sh "scp  -o StrictHostKeyChecking=no  target/application.war ubuntu@54.146.255.238://var/lib/tomcat9/webapps"
+    }
+ }
+ 
+ stage('EmailNotification')
+ {
+ emailext body: '''Hi Mounika,
+
+Sent notification.
+
+Thanks,
+SivaReddy''', subject: 'Send grovy script', to: 'dvmounika1996@gmail.com'
+ }
+ 
+}
